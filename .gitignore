@@ -118,3 +118,9 @@ mmseg/.mim
 
 # Pytorch
 *.pth
+
+# wandb
+temp_dir/
+
+# nohup
+outs/

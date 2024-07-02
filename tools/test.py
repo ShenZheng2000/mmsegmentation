@@ -115,6 +115,18 @@ def main():
     # build the runner from config
     runner = Runner.from_cfg(cfg)
 
+    # # NOTE: insert some lines to print model layers
+    # # Print the Swin Transformer backbone stages
+    # print("\nBackbone Structure:")
+    # if hasattr(runner.model, 'backbone') and hasattr(runner.model.backbone, 'stages'):
+    #     backbone = runner.model.backbone
+    #     for i, stage in enumerate(backbone.stages):
+    #         print(f"\nStage {i + 1}:")
+    #         print(stage)
+    
+    # print("exit!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    # exit()
+
     # start testing
     runner.test()
 

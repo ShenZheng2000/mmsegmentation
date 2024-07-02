@@ -1,5 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # yapf: disable
+from .acdc import ACDCDataset
+from .nightcity import NightCityDataset
 from .ade import ADE20KDataset
 from .basesegdataset import BaseCDDataset, BaseSegDataset
 from .bdd100k import BDD100KDataset
@@ -42,6 +44,7 @@ from .voc import PascalVOCDataset
 
 # yapf: enable
 __all__ = [
+    'ACDCDataset', 'NightCityDataset',
     'BaseSegDataset', 'BioMedical3DRandomCrop', 'BioMedical3DRandomFlip',
     'CityscapesDataset', 'PascalVOCDataset', 'ADE20KDataset',
     'PascalContextDataset', 'PascalContextDataset59', 'ChaseDB1Dataset',
