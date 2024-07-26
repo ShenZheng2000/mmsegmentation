@@ -49,7 +49,7 @@ test_model() {
 # test_model "Cityscapes" "Cityscapes" "Cityscapes" "Instruct-pix2pix"
 
 # test_model "Cityscapes" "BDD10K" "Cityscapes" "Night" "90000" # Night just for testing config placeholder
-test_model "Cityscapes" "NightCity" "Cityscapes" "Night" "110000" # Night just for testing config placeholder
+# test_model "Cityscapes" "NightCity" "Cityscapes" "Night" "110000" # Night just for testing config placeholder
 
 # test_model "depth_anything" "No" "Cityscapes" "No" 
 

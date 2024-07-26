@@ -124,3 +124,8 @@ temp_dir/
 
 # nohup
 outs/
+
+# images
+*.png
+*.jpg
+*.pdf

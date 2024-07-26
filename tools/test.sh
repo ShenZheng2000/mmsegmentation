@@ -63,7 +63,7 @@ test_model() {
 # test_model "Cityscapes" "Cityscapes" "Cityscapes" "CycleGAN-turbo"
 # test_model "Cityscapes" "Cityscapes" "Cityscapes" "Instruct-pix2pix"
 
-# # Finetuning in BDD10K Images (TODO: need modify code such that we can get the weights)
+# # Finetuning in BDD10K Images
 # test_model "Cityscapes" "BDD10K" "Cityscapes" "CUT" "100000"
 # test_model "Cityscapes" "BDD10K" "Cityscapes" "MoNCE" "95000"
 # test_model "Cityscapes" "BDD10K" "Cityscapes" "TPSeNCE" "100000"
@@ -111,6 +111,10 @@ test_model() {
 # test_model "Cityscapes" "Cityscapes" "BDD10K" "TPSeNCE"
 # test_model "Cityscapes" "Cityscapes" "BDD10K" "CycleGAN-turbo"
 # test_model "Cityscapes" "Cityscapes" "BDD10K" "Instruct-pix2pix"
+
+# Finetuning (NOTE: check test_6_21_bk.sh for more details about I2I on BDD10K images)
+# test_model "Cityscapes" "BDD10K" "BDD10K" "TPSeNCE_2" "100000"
+
 
 # Preprocessing
 # test_model "Cityscapes" "No" "BDD10K" "RUAS"
@@ -235,16 +239,16 @@ test_model() {
 # test_model "Cityscapes" "NightCity" "ACDC" "Night" "110000"
 
 # Preprocessing
-# test_model "Cityscapes" "No" "ACDC" "RUAS"
-# test_model "Cityscapes" "No" "ACDC" "SCI"
-# test_model "Cityscapes" "No" "ACDC" "RetinexFormer"
-# test_model "Cityscapes" "No" "ACDC" "SKF"
-# test_model "Cityscapes" "No" "ACDC" "LLFlow"
-# test_model "Cityscapes" "No" "ACDC" "NeRCo"
-# test_model "Cityscapes" "No" "ACDC" "ZeroDCE"
-# test_model "Cityscapes" "No" "ACDC" "CLIP_LIT"
-# test_model "Cityscapes" "No" "ACDC" "PairLIE"
-# test_model "Cityscapes" "No" "ACDC" "DiffLL"
+test_model "Cityscapes" "No" "ACDC" "RUAS"
+test_model "Cityscapes" "No" "ACDC" "SCI"
+test_model "Cityscapes" "No" "ACDC" "RetinexFormer"
+test_model "Cityscapes" "No" "ACDC" "SKF"
+test_model "Cityscapes" "No" "ACDC" "LLFlow"
+test_model "Cityscapes" "No" "ACDC" "NeRCo"
+test_model "Cityscapes" "No" "ACDC" "ZeroDCE"
+test_model "Cityscapes" "No" "ACDC" "CLIP_LIT"
+test_model "Cityscapes" "No" "ACDC" "PairLIE"
+test_model "Cityscapes" "No" "ACDC" "DiffLL"
 # test_model "Cityscapes" "No" "ACDC" "CycleGAN-turbo_b2a" # reverse way for preprocessing
 
 # Large Pretrain

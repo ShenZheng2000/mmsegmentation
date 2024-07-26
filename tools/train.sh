@@ -46,3 +46,5 @@ train_model() {
 
     echo "Training initiated. Check the output file: outs/${PRETRAIN}_${FINETUNE}_${TEST_DATASET}_${I2I_MODEL}.out"
 }
+
+# train_model "Cityscapes" "BDD10K" "BDD10K" "CycleGAN-turbo_resize_286_randomcrop_256x256_hflip_0703" 0
