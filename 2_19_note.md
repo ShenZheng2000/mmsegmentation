@@ -16,6 +16,12 @@ Activate the Conda environment with all the necessary dependencies:
 conda activate openmmlab
 ```
 
+NOTE: Ensure that mmengine is this version or lower to avoid conflicts.
+
+```
+mim install mmengine==0.10.2
+```
+
 # Dataset Preparation
 
 Datasets required:
